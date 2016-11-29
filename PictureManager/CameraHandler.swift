@@ -15,7 +15,7 @@ class CameraHandler: NSObject, FusumaDelegate {
     
     var passedVC: UIViewController?
     
-    func presentFusumaCamera(_ onVC: ViewController, _ isAvatar: Bool) {
+    func presentFusumaCamera(_ onVC: UIViewController, _ isAvatar: Bool) {
         globalIsAvatar = isAvatar
         passedVC = onVC
         let fusuma = FusumaViewController()
