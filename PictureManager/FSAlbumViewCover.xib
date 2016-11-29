@@ -20,10 +20,10 @@
                     <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
                     <subviews>
                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="QHJ-13-dGP">
-                            <rect key="frame" x="0.0" y="450" width="400" height="150"/>
+                            <rect key="frame" x="0.0" y="255" width="400" height="345"/>
                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="150" id="OgG-JZ-yfY"/>
+                                <constraint firstAttribute="height" constant="345" id="OgG-JZ-yfY"/>
                             </constraints>
                             <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="FNL-m7-uZk">
                                 <size key="itemSize" width="60" height="60"/>
