@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11761" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PictureManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWF-ZL-rsb">
+                                <rect key="frame" x="16" y="20" width="343" height="70"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="x4x-tk-mQy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="27"/>
+                                <state key="normal" title="NEW AVATAR">
+                                    <color key="titleColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="newAvatarBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dFO-3b-M5E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsg-mb-eZJ">
+                                <rect key="frame" x="16" y="469" width="343" height="70"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="0Wr-Vo-eib"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="27"/>
+                                <state key="normal" title="NEW COVER">
+                                    <color key="titleColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="newCoverBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FBt-ZY-cLe"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholderCover" translatesAutoresizingMaskIntoConstraints="NO" id="erP-nF-7hA">
+                                <rect key="frame" x="0.0" y="559" width="375" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="HmY-vR-ean"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatarPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="H5X-hS-uwA">
+                                <rect key="frame" x="16" y="98" width="343" height="343"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="H5X-hS-uwA" secondAttribute="height" multiplier="1:1" id="GhT-5u-2re"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12939286229999999" green="0.12942266459999999" blue="0.12939092520000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dsg-mb-eZJ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="9AI-di-B4n"/>
+                            <constraint firstItem="bWF-ZL-rsb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Idu-0u-PKb"/>
+                            <constraint firstAttribute="trailing" secondItem="erP-nF-7hA" secondAttribute="trailing" id="M5D-CY-jtn"/>
+                            <constraint firstItem="H5X-hS-uwA" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="O6a-IJ-ZaG"/>
+                            <constraint firstItem="H5X-hS-uwA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="aOF-zW-4vG"/>
+                            <constraint firstItem="bWF-ZL-rsb" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="bVB-Te-hfr"/>
+                            <constraint firstItem="bWF-ZL-rsb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="bwq-Yg-h0N"/>
+                            <constraint firstItem="erP-nF-7hA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="c5J-Cd-Xdr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="erP-nF-7hA" secondAttribute="bottom" constant="8" id="csf-af-3mN"/>
+                            <constraint firstItem="erP-nF-7hA" firstAttribute="top" secondItem="dsg-mb-eZJ" secondAttribute="bottom" constant="20" id="izR-9V-nLc"/>
+                            <constraint firstItem="dsg-mb-eZJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="mj3-g1-53g"/>
+                            <constraint firstItem="H5X-hS-uwA" firstAttribute="top" secondItem="bWF-ZL-rsb" secondAttribute="bottom" constant="8" id="vlz-YR-b27"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="avatarHighIV" destination="H5X-hS-uwA" id="hEX-Vk-Pxn"/>
+                        <outlet property="coverHighIV" destination="erP-nF-7hA" id="ruH-xe-6oX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="avatarPlaceholder" width="512" height="512"/>
+        <image name="placeholderCover" width="851" height="314"/>
+    </resources>
+</document>

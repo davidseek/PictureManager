@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11761" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FSAlbumView" customModule="PictureManager" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view hidden="YES" contentMode="scaleToFill" id="aPI-Wq-JPb" customClass="FSAlbumView" customModule="PictureManager" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KoJ-SD-KxS">
+                    <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="QHJ-13-dGP">
+                            <rect key="frame" x="0.0" y="450" width="400" height="150"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="150" id="OgG-JZ-yfY"/>
+                            </constraints>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="FNL-m7-uZk">
+                                <size key="itemSize" width="60" height="60"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <connections>
+                                <outlet property="dataSource" destination="aPI-Wq-JPb" id="SVM-wF-6Mc"/>
+                                <outlet property="delegate" destination="aPI-Wq-JPb" id="CS8-Bf-nFP"/>
+                            </connections>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="QHJ-13-dGP" secondAttribute="bottom" id="OAw-ZB-mm4"/>
+                        <constraint firstItem="QHJ-13-dGP" firstAttribute="leading" secondItem="KoJ-SD-KxS" secondAttribute="leading" id="SMP-UR-uSX"/>
+                        <constraint firstAttribute="trailing" secondItem="QHJ-13-dGP" secondAttribute="trailing" id="jSW-0S-88P"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fSu-OK-7nX" userLabel="Image Crop View Container">
+                    <rect key="frame" x="0.0" y="115" width="400" height="159"/>
+                    <subviews>
+                        <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="USS-tV-F5c" customClass="FSImageCropView" customModule="PictureManager" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="15" width="400" height="129"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="129" id="MPJ-Hm-gsp"/>
+                            </constraints>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="USS-tV-F5c" secondAttribute="trailing" id="4B0-08-deI"/>
+                        <constraint firstItem="USS-tV-F5c" firstAttribute="leading" secondItem="fSu-OK-7nX" secondAttribute="leading" id="Rxc-UY-BR3"/>
+                        <constraint firstAttribute="width" secondItem="fSu-OK-7nX" secondAttribute="height" multiplier="1:1" constant="241" id="t4Y-pD-D4w"/>
+                        <constraint firstItem="USS-tV-F5c" firstAttribute="centerY" secondItem="fSu-OK-7nX" secondAttribute="centerY" id="xXW-5H-OFc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="KoJ-SD-KxS" firstAttribute="leading" secondItem="aPI-Wq-JPb" secondAttribute="leading" id="3GW-Vj-0oF"/>
+                <constraint firstAttribute="trailing" secondItem="KoJ-SD-KxS" secondAttribute="trailing" id="45x-oC-zQY"/>
+                <constraint firstItem="fSu-OK-7nX" firstAttribute="top" secondItem="aPI-Wq-JPb" secondAttribute="top" constant="115" id="9iV-4X-W9p"/>
+                <constraint firstAttribute="trailing" secondItem="fSu-OK-7nX" secondAttribute="trailing" id="Ip4-vE-dg9"/>
+                <constraint firstItem="fSu-OK-7nX" firstAttribute="leading" secondItem="aPI-Wq-JPb" secondAttribute="leading" id="TCM-VF-qgb"/>
+                <constraint firstAttribute="bottom" secondItem="KoJ-SD-KxS" secondAttribute="bottom" id="bOQ-cE-rAB"/>
+                <constraint firstItem="KoJ-SD-KxS" firstAttribute="top" secondItem="aPI-Wq-JPb" secondAttribute="top" id="fbT-Mj-DGX"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="collectionView" destination="QHJ-13-dGP" id="Vdx-R3-442"/>
+                <outlet property="collectionViewConstraintHeight" destination="OgG-JZ-yfY" id="gri-RB-mjS"/>
+                <outlet property="imageCropView" destination="USS-tV-F5c" id="g4f-sL-rb9"/>
+                <outlet property="imageCropViewConstraintTop" destination="9iV-4X-W9p" id="QUO-2j-9BQ"/>
+                <outlet property="imageCropViewContainer" destination="fSu-OK-7nX" id="D9D-6j-dbG"/>
+            </connections>
+        </view>
+    </objects>
+</document>

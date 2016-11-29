@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C3505EB1DEDC04600BB1930 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3505EA1DEDC04600BB1930 /* AppDelegate.swift */; };
+		6C3505ED1DEDC04600BB1930 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3505EC1DEDC04600BB1930 /* ViewController.swift */; };
+		6C3505F01DEDC04600BB1930 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C3505EE1DEDC04600BB1930 /* Main.storyboard */; };
+		6C3505F31DEDC04600BB1930 /* PictureManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6C3505F11DEDC04600BB1930 /* PictureManager.xcdatamodeld */; };
+		6C3505F51DEDC04600BB1930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C3505F41DEDC04600BB1930 /* Assets.xcassets */; };
+		6C3505F81DEDC04600BB1930 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C3505F61DEDC04600BB1930 /* LaunchScreen.storyboard */; };
+		6C7DAD8D1DEDCCC50032528E /* CameraHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7DAD8C1DEDCCC50032528E /* CameraHandler.swift */; };
+		6C99A5461DEE09E700925E00 /* FusumaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C99A53A1DEE09E700925E00 /* FusumaViewController.swift */; };
+		6C99A5471DEE09E700925E00 /* FusumaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C99A53B1DEE09E700925E00 /* FusumaViewController.xib */; };
+		6C99A5481DEE09E700925E00 /* FSAlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C99A53C1DEE09E700925E00 /* FSAlbumView.swift */; };
+		6C99A5491DEE09E700925E00 /* FSAlbumView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C99A53D1DEE09E700925E00 /* FSAlbumView.xib */; };
+		6C99A54A1DEE09E700925E00 /* FSAlbumViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C99A53E1DEE09E700925E00 /* FSAlbumViewCell.swift */; };
+		6C99A54B1DEE09E700925E00 /* FSAlbumViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C99A53F1DEE09E700925E00 /* FSAlbumViewCell.xib */; };
+		6C99A54C1DEE09E700925E00 /* FSCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C99A5401DEE09E700925E00 /* FSCameraView.swift */; };
+		6C99A54D1DEE09E700925E00 /* FSCameraView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C99A5411DEE09E700925E00 /* FSCameraView.xib */; };
+		6C99A54E1DEE09E700925E00 /* FSConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C99A5421DEE09E700925E00 /* FSConstants.swift */; };
+		6C99A54F1DEE09E700925E00 /* FSImageCropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C99A5431DEE09E700925E00 /* FSImageCropView.swift */; };
+		6C99A5501DEE09E700925E00 /* FSVideoCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C99A5441DEE09E700925E00 /* FSVideoCameraView.swift */; };
+		6C99A5511DEE09E700925E00 /* FSVideoCameraView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C99A5451DEE09E700925E00 /* FSVideoCameraView.xib */; };
+		6C99A5551DEE146600925E00 /* FSAlbumViewCover.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C99A5541DEE146600925E00 /* FSAlbumViewCover.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		21E88531426A5E00AF4BD931 /* Pods-PictureManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PictureManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PictureManager/Pods-PictureManager.debug.xcconfig"; sourceTree = "<group>"; };
+		6C3505E71DEDC04600BB1930 /* PictureManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PictureManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C3505EA1DEDC04600BB1930 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6C3505EC1DEDC04600BB1930 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6C3505EF1DEDC04600BB1930 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6C3505F21DEDC04600BB1930 /* PictureManager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PictureManager.xcdatamodel; sourceTree = "<group>"; };
+		6C3505F41DEDC04600BB1930 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6C3505F71DEDC04600BB1930 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6C3505F91DEDC04600BB1930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C7DAD8C1DEDCCC50032528E /* CameraHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraHandler.swift; sourceTree = "<group>"; };
+		6C99A53A1DEE09E700925E00 /* FusumaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FusumaViewController.swift; sourceTree = "<group>"; };
+		6C99A53B1DEE09E700925E00 /* FusumaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FusumaViewController.xib; sourceTree = "<group>"; };
+		6C99A53C1DEE09E700925E00 /* FSAlbumView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSAlbumView.swift; sourceTree = "<group>"; };
+		6C99A53D1DEE09E700925E00 /* FSAlbumView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FSAlbumView.xib; sourceTree = "<group>"; };
+		6C99A53E1DEE09E700925E00 /* FSAlbumViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSAlbumViewCell.swift; sourceTree = "<group>"; };
+		6C99A53F1DEE09E700925E00 /* FSAlbumViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FSAlbumViewCell.xib; sourceTree = "<group>"; };
+		6C99A5401DEE09E700925E00 /* FSCameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSCameraView.swift; sourceTree = "<group>"; };
+		6C99A5411DEE09E700925E00 /* FSCameraView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FSCameraView.xib; sourceTree = "<group>"; };
+		6C99A5421DEE09E700925E00 /* FSConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSConstants.swift; sourceTree = "<group>"; };
+		6C99A5431DEE09E700925E00 /* FSImageCropView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSImageCropView.swift; sourceTree = "<group>"; };
+		6C99A5441DEE09E700925E00 /* FSVideoCameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSVideoCameraView.swift; sourceTree = "<group>"; };
+		6C99A5451DEE09E700925E00 /* FSVideoCameraView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FSVideoCameraView.xib; sourceTree = "<group>"; };
+		6C99A5541DEE146600925E00 /* FSAlbumViewCover.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FSAlbumViewCover.xib; sourceTree = "<group>"; };
+		A67175395622F9AA5781761E /* Pods-PictureManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PictureManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-PictureManager/Pods-PictureManager.release.xcconfig"; sourceTree = "<group>"; };
+		F5B99E2069A16F7DBA3F9E39 /* Pods_PictureManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PictureManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6C3505E41DEDC04600BB1930 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A479CD60ABF130D4CF9B783 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5B99E2069A16F7DBA3F9E39 /* Pods_PictureManager.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6C3505DE1DEDC04600BB1930 = {
+			isa = PBXGroup;
+			children = (
+				6C3505E91DEDC04600BB1930 /* PictureManager */,
+				6C3505E81DEDC04600BB1930 /* Products */,
+				BD6249339EAEFACF55374A3E /* Pods */,
+				1A479CD60ABF130D4CF9B783 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6C3505E81DEDC04600BB1930 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C3505E71DEDC04600BB1930 /* PictureManager.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6C3505E91DEDC04600BB1930 /* PictureManager */ = {
+			isa = PBXGroup;
+			children = (
+				6C99A5531DEE0BCC00925E00 /* CameraHandler */,
+				6C3505EA1DEDC04600BB1930 /* AppDelegate.swift */,
+				6C3505EC1DEDC04600BB1930 /* ViewController.swift */,
+				6C3505EE1DEDC04600BB1930 /* Main.storyboard */,
+				6C3505F41DEDC04600BB1930 /* Assets.xcassets */,
+				6C3505F61DEDC04600BB1930 /* LaunchScreen.storyboard */,
+				6C3505F91DEDC04600BB1930 /* Info.plist */,
+				6C3505F11DEDC04600BB1930 /* PictureManager.xcdatamodeld */,
+			);
+			path = PictureManager;
+			sourceTree = "<group>";
+		};
+		6C99A5521DEE0BC400925E00 /* Fusuma */ = {
+			isa = PBXGroup;
+			children = (
+				6C99A53A1DEE09E700925E00 /* FusumaViewController.swift */,
+				6C99A53B1DEE09E700925E00 /* FusumaViewController.xib */,
+				6C99A53C1DEE09E700925E00 /* FSAlbumView.swift */,
+				6C99A53D1DEE09E700925E00 /* FSAlbumView.xib */,
+				6C99A5541DEE146600925E00 /* FSAlbumViewCover.xib */,
+				6C99A53E1DEE09E700925E00 /* FSAlbumViewCell.swift */,
+				6C99A53F1DEE09E700925E00 /* FSAlbumViewCell.xib */,
+				6C99A5401DEE09E700925E00 /* FSCameraView.swift */,
+				6C99A5411DEE09E700925E00 /* FSCameraView.xib */,
+				6C99A5421DEE09E700925E00 /* FSConstants.swift */,
+				6C99A5431DEE09E700925E00 /* FSImageCropView.swift */,
+				6C99A5441DEE09E700925E00 /* FSVideoCameraView.swift */,
+				6C99A5451DEE09E700925E00 /* FSVideoCameraView.xib */,
+			);
+			name = Fusuma;
+			sourceTree = "<group>";
+		};
+		6C99A5531DEE0BCC00925E00 /* CameraHandler */ = {
+			isa = PBXGroup;
+			children = (
+				6C99A5521DEE0BC400925E00 /* Fusuma */,
+				6C7DAD8C1DEDCCC50032528E /* CameraHandler.swift */,
+			);
+			name = CameraHandler;
+			sourceTree = "<group>";
+		};
+		BD6249339EAEFACF55374A3E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21E88531426A5E00AF4BD931 /* Pods-PictureManager.debug.xcconfig */,
+				A67175395622F9AA5781761E /* Pods-PictureManager.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6C3505E61DEDC04600BB1930 /* PictureManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C3505FC1DEDC04600BB1930 /* Build configuration list for PBXNativeTarget "PictureManager" */;
+			buildPhases = (
+				6C3505E31DEDC04600BB1930 /* Sources */,
+				6C3505E41DEDC04600BB1930 /* Frameworks */,
+				6C3505E51DEDC04600BB1930 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PictureManager;
+			productName = PictureManager;
+			productReference = 6C3505E71DEDC04600BB1930 /* PictureManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6C3505DF1DEDC04600BB1930 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "David Seek";
+				TargetAttributes = {
+					6C3505E61DEDC04600BB1930 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 69XUZ6HBUE;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6C3505E21DEDC04600BB1930 /* Build configuration list for PBXProject "PictureManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6C3505DE1DEDC04600BB1930;
+			productRefGroup = 6C3505E81DEDC04600BB1930 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6C3505E61DEDC04600BB1930 /* PictureManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6C3505E51DEDC04600BB1930 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C99A5491DEE09E700925E00 /* FSAlbumView.xib in Resources */,
+				6C3505F81DEDC04600BB1930 /* LaunchScreen.storyboard in Resources */,
+				6C99A5511DEE09E700925E00 /* FSVideoCameraView.xib in Resources */,
+				6C99A54D1DEE09E700925E00 /* FSCameraView.xib in Resources */,
+				6C99A5471DEE09E700925E00 /* FusumaViewController.xib in Resources */,
+				6C99A54B1DEE09E700925E00 /* FSAlbumViewCell.xib in Resources */,
+				6C3505F51DEDC04600BB1930 /* Assets.xcassets in Resources */,
+				6C99A5551DEE146600925E00 /* FSAlbumViewCover.xib in Resources */,
+				6C3505F01DEDC04600BB1930 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6C3505E31DEDC04600BB1930 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C3505ED1DEDC04600BB1930 /* ViewController.swift in Sources */,
+				6C99A5481DEE09E700925E00 /* FSAlbumView.swift in Sources */,
+				6C99A54C1DEE09E700925E00 /* FSCameraView.swift in Sources */,
+				6C3505EB1DEDC04600BB1930 /* AppDelegate.swift in Sources */,
+				6C99A54E1DEE09E700925E00 /* FSConstants.swift in Sources */,
+				6C99A5501DEE09E700925E00 /* FSVideoCameraView.swift in Sources */,
+				6C7DAD8D1DEDCCC50032528E /* CameraHandler.swift in Sources */,
+				6C99A54A1DEE09E700925E00 /* FSAlbumViewCell.swift in Sources */,
+				6C3505F31DEDC04600BB1930 /* PictureManager.xcdatamodeld in Sources */,
+				6C99A5461DEE09E700925E00 /* FusumaViewController.swift in Sources */,
+				6C99A54F1DEE09E700925E00 /* FSImageCropView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6C3505EE1DEDC04600BB1930 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C3505EF1DEDC04600BB1930 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6C3505F61DEDC04600BB1930 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C3505F71DEDC04600BB1930 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6C3505FA1DEDC04600BB1930 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6C3505FB1DEDC04600BB1930 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6C3505FD1DEDC04600BB1930 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21E88531426A5E00AF4BD931 /* Pods-PictureManager.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 69XUZ6HBUE;
+				INFOPLIST_FILE = PictureManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidseek.PictureManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6C3505FE1DEDC04600BB1930 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A67175395622F9AA5781761E /* Pods-PictureManager.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 69XUZ6HBUE;
+				INFOPLIST_FILE = PictureManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidseek.PictureManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6C3505E21DEDC04600BB1930 /* Build configuration list for PBXProject "PictureManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C3505FA1DEDC04600BB1930 /* Debug */,
+				6C3505FB1DEDC04600BB1930 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C3505FC1DEDC04600BB1930 /* Build configuration list for PBXNativeTarget "PictureManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C3505FD1DEDC04600BB1930 /* Debug */,
+				6C3505FE1DEDC04600BB1930 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6C3505F11DEDC04600BB1930 /* PictureManager.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6C3505F21DEDC04600BB1930 /* PictureManager.xcdatamodel */,
+			);
+			currentVersion = 6C3505F21DEDC04600BB1930 /* PictureManager.xcdatamodel */;
+			path = PictureManager.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6C3505DF1DEDC04600BB1930 /* Project object */;
+}
